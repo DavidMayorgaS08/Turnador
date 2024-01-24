@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+body{
+    background-color: #faebd7;
+}
+
+.info {
+    display: flex;
+    position: relative;
+}
+
+.cont1 {
+    width: 58%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px 2%;
+}
+
+.cards{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    align-items: center;
+    clip-path: polygon(0 80%, 0 0, 100% 0, 100% 80%, 50% 100%);
+    height: 160px;
+}
+
+.cont_num_card{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cont_info_card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.cont2 {
+    position: absolute;
+    right: 2%;
+    top: 21vh;
+    background-color: #ffb62e;
+    width: 40%;
+    border-radius: 8px;
+}
+
+.cont_titulo_sacar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cont_btn_sacar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.btn_sacar {
+    background-color: #00BFA6;
+    padding: 8px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px dashed #00BFA6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+}
+
+.btn_sacar span:last-child {
+    display: none;
+}
+
+.btn_sacar:hover {
+    transition: .4s;
+    border: 2px dashed #00BFA6;
+    background-color: #fff;
+    color: #00BFA6;
+}
+
+.btn_sacar:active {
+    background-color: #87dbd0;
+}
+
+.cont_cards_nuevas{
+    width: 100%;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_ficho{
+    background-color: #ffffff;
+    width: 30%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num_ficho{
+    font-size: 30px;
+    font-weight: bold;
+}
