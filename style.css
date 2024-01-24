@@ -11,7 +11,6 @@ body{
 
 .info {
     display: flex;
-    position: relative;
 }
 
 .cont1 {
@@ -47,7 +46,7 @@ body{
 }
 
 .cont2 {
-    position: absolute;
+    position: fixed;
     right: 2%;
     top: 21vh;
     background-color: #ffb62e;
