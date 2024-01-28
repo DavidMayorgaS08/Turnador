@@ -5,81 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turnador</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="./main.js"></script>
 </head>
 <body>
     <section class="info">
-        <div class="cont1">
-            <div class="cards">
-                <div class="cont_num_card">
-                    <p class="text_num_card">01</p>
-                </div>
-                <div class="cont_info_card">
-                    <div class="cont_btn_aceptar">
-                        <button class="btn_aceptar">Aceptar</button>
-                    </div>
-                    <div class="cont_btn_rechazar">
-                        <button class="btn_rechazar">Rechazar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="cont_num_card">
-                    <p class="text_num_card">01</p>
-                </div>
-                <div class="cont_info_card">
-                    <div class="cont_btn_aceptar">
-                        <button class="btn_aceptar">Aceptar</button>
-                    </div>
-                    <div class="cont_btn_rechazar">
-                        <button class="btn_rechazar">Rechazar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="cont_num_card">
-                    <p class="text_num_card">01</p>
-                </div>
-                <div class="cont_info_card">
-                    <div class="cont_btn_aceptar">
-                        <button class="btn_aceptar">Aceptar</button>
-                    </div>
-                    <div class="cont_btn_rechazar">
-                        <button class="btn_rechazar">Rechazar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="cont_num_card">
-                    <p class="text_num_card">01</p>
-                </div>
-                <div class="cont_info_card">
-                    <div class="cont_btn_aceptar">
-                        <button class="btn_aceptar">Aceptar</button>
-                    </div>
-                    <div class="cont_btn_rechazar">
-                        <button class="btn_rechazar">Rechazar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="cont_num_card">
-                    <p class="text_num_card">01</p>
-                </div>
-                <div class="cont_info_card">
-                    <div class="cont_btn_aceptar">
-                        <button class="btn_aceptar">Aceptar</button>
-                    </div>
-                    <div class="cont_btn_rechazar">
-                        <button class="btn_rechazar">Rechazar</button>
-                    </div>
-                </div>
-            </div>
+        <div id="cont_cards" class="cont1">
         </div>
         <div class="cont2">
             <div class="cont2_info">
                 <div class="cont_btn_sacar">
-                    <button class="btn_sacar">Sacar ficho</button>
+                    <button onclick="new_shift()" class="btn_sacar">Sacar ficho</button>
                 </div>
                 <div class="cont_titulo_sacar">
                     <p class="text_titulo_sacar">El turno es:</p>
@@ -87,8 +23,20 @@
             </div>
             <div class="cont_cards_nuevas">
                 <div class="card_ficho">
-                    <p class="num_ficho">01</p>
+                    <p id="num" class="num_ficho">0</p>
                 </div>
+            </div>
+            <div class="cont_btns">
+                <div class="cont_btn_anterior">
+                    <button onclick="previous_shift()" class="btn_anterior">Anterior</button>
+                </div>
+                <div class="cont_btn_reset">
+                    <button onclick="resetPage()" class="btn_reset"><i class="fa-solid fa-circle-exclamation"></i></button>
+                </div>
+                <div class="cont_btn_siguiente">
+                    <button onclick="next_shift()" class="btn_siguiente">Siguiente</button>
+                </div>
+
             </div>
         </div>
     </section>
