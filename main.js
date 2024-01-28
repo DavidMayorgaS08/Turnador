@@ -33,13 +33,13 @@ function new_shift(){
 }
 
 function accept_shift(index){
-    cards[index].classList.remove('rejected'); // Elimina la clase 'rejected'
-    cards[index].classList.add('accepted');    // Agrega la clase 'accepted'
+    cards[index].classList.remove('rejected');
+    cards[index].classList.add('accepted');
 }
 
 function reject_shift(index){
-    cards[index].classList.remove('accepted'); // Elimina la clase 'accepted'
-    cards[index].classList.add('rejected');    // Agrega la clase 'rejected'
+    cards[index].classList.remove('accepted');
+    cards[index].classList.add('rejected');
 }
 
 function next_shift(){
