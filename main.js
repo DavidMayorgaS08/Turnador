@@ -28,8 +28,6 @@ function new_shift(){
     let cont_cards = document.getElementById("cont_cards");
     cont_cards.appendChild(card);
     cards.push(card);
-
-    console.log(cards);
 }
 
 function accept_shift(index){
@@ -47,8 +45,6 @@ function next_shift(){
     if(turno < nuevo_turno){
         turno++;
         num.innerHTML = turno;
-    }else{
-        alert("No hay mas turnos");
     }
 }
 
@@ -57,7 +53,5 @@ function previous_shift(){
     if(turno > 0){
         turno--;
         num.innerHTML = turno;
-    }else{
-        alert("No hay mas turnos");
     }
 }
